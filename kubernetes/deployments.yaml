@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: hello-python-test
 spec:
+  selector:
+    app: hello-python-test
   replicas: 4
   template:
     metadata:
