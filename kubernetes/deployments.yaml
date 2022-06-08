@@ -13,11 +13,7 @@ spec:
         app: hello-python-test
     spec:
       containers:
-      - name: hello-python-test
-        image: hello-python:latest
-        ports:
-        - containerPort: 5000
-    
-    
-    
-    
+        - name: hello-python-test
+          image: hello-python
+          ports:
+            - containerPort: 5000
