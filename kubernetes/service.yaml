@@ -3,9 +3,9 @@ kind: Service
 metadata:
   name: hello-python-service
 spec:
-  selector: 
-    app: hello-python-test
+  selector:
+    app: hello-python
   ports:
-  - port: 6000
-    targetPort: 5000
+    - port: 6000
+      targetPort: 5000
   type: LoadBalancer
