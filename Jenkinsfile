@@ -32,5 +32,13 @@ pipeline {
                 }
             }
         }
+        stage('Build') {
+            steps {
+                sh """
+                    docker build -f dockerfile -t hello-python:latest .
+                    docker image ls
+                """
+            }
+        }
     }
 }
